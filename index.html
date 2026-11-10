@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Projet Collaboratif</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur notre Projet Web</h1>
+        <p>Projet réalisé sous la direction de Prof. M. Aymen Assali.</p>
+    </header>
+    <main>
+        <section id="presentation">
+            <h2>À propos de l'équipe</h2>
+            <p>Ce projet illustre le suivi de version avec Git.</p>
+        </section>
+    </main>
+</body>
+</html>
+ 
+ 
+Najoua a été invité(e) à la réunion.
+
+ 
+nykterstein@debian:~$ mkdir mon-projet-git
+
+nykterstein@debian:~$ pwd
+
+/home/nykterstein
+
+nykterstein@debian:~$ ls
+
+anomaly-d3dc43-native.log       ngrok.zip
+
+anomaly-dx9.log                 nikto
+
+anomaly.log                     nmap-7.98
+
+anomaly-native-compiler.log     nmap-7.98.tar.bz2
+
+anomaly-r2a.log                 nodejs
+
+Desktop                         peazip_10.0.0.LINUX.GTK2-1_amd64.deb
+
+dist-installer-cli-download     Pictures
+
+Documents                       Public
+
+Downloads                       __pycache__
+
+external_hd                     snap
+
+fiveplay_assets_downloader.py   teamsalt
+
+fiveplay_downloader.py          Templates
+
+fiveplay_offline               'udo ss -lntp | grep '\'':631'\'''
+
+Games                           usb-drive
+
+mon-projet-git                  Videos
+
+Music                           whonix-lxqt-installer-cli
+
+nykterstein@debian:~$ cd mon-projet-git
+
+nykterstein@debian:~/mon-projet-git$ pwd
+
+/home/nykterstein/mon-projet-git
+
+nykterstein@debian:~/mon-projet-git$ ^C
+
+nykterstein@debian:~/mon-projet-git$ git status
+
+fatal: not a git repository (or any of the parent directories): .git
+
+nykterstein@debian:~/mon-projet-git$ git config --global user.name ahmed
+
+nykterstein@debian:~/mon-projet-git$ git config --global user.email ahmedsaadaoui411@gmail.com
+
+nykterstein@debian:~/mon-projet-git$ git config --list
+
+user.name=ahmed
+
+user.email=ahmedsaadaoui411@gmail.com
+
+nykterstein@debian:~/mon-projet-git$ git init
+
+hint: Using 'master' as the name for the initial branch. This default branch name
+
+hint: is subject to change. To configure the initial branch name to use in all
+
+hint: of your new repositories, which will suppress this warning, call:
+
+hint:
+
+hint: 	git config --global init.defaultBranch <name>
+
+hint:
+
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+
+hint: 'development'. The just-created branch can be renamed via this command:
+
+hint:
+
+hint: 	git branch -m <name>
+
+Initialized empty Git repository in /home/nykterstein/mon-projet-git/.git/
+
+nykterstein@debian:~/mon-projet-git$ git status
+
+On branch master
+ 
+No commits yet
+ 
+Untracked files:
+
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+ 
+nothing added to commit but untracked files present (use "git add" to track)
+
+nykterstein@debian:~/mon-projet-git$ git add index.html
+
+nykterstein@debian:~/mon-projet-git$ git status
+
+On branch master
+ 
+No commits yet
+ 
+Changes to be committed:
+
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   index.html
+ 
+nykterstein@debian:~/mon-projet-git$ git commit -m "feat add initial structure"
+
+[master (root-commit) 6cabb1a] feat add initial structure
+
+1 file changed, 19 insertions(+)
+
+create mode 100644 index.html
+
+nykterstein@debian:~/mon-projet-git$ git log --oneline
+
+6cabb1a (HEAD -> master) feat add initial structure
+
+nykterstein@debian:~/mon-projet-git$ 
+
+ 
